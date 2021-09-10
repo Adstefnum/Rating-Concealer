@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "[Rating Concealer]",
+    "description": "[An extension for blocking ratings.]",
+    "author": "Stephen Adesina",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
