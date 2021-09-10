@@ -2,13 +2,15 @@
 
 An extension which checks for all ratings on Lichess.com and blocks it out so you can focus on playing great chess. Note it also works on years in the format yyyy so restrict it to sites you want alone e.g lichess and chess.com etc..
 
+It removes all ratings not only yours.
+
 # Features to add
 - Let users type in preferred message to be displayed.
 - Display quotes or blank based on user's choice if they don't enter custom message.
 - Enable for Analysis Board "Ad_stefnum (1432)"
 - Enable for player modal.
 - Enable for Provisional rating 1310?
-- Add Logo to Icon.
+- Enable for puzzles
 
 # Installation
 - Clone this repo.
