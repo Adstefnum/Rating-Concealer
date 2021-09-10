@@ -8,6 +8,7 @@ An extension which checks for all ratings on Lichess.com and blocks it out so yo
 - Enable for Analysis Board "Ad_stefnum (1432)"
 - Enable for player modal.
 - Enable for Provisional rating 1310?
+- Add Logo to Icon.
 
 # Installation
 - Clone this repo.
