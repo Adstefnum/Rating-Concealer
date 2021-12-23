@@ -11,6 +11,7 @@ It removes all ratings not only yours.
 - Enable for player modal.
 - Enable for Provisional rating 1310?
 - Enable for puzzles
+- Add to Gamepage
 
 # Installation
 - Clone this repo.
