@@ -1,11 +1,4 @@
 var elements = document.getElementsByTagName('*');
-//elements.push(document.getElementsByTagName('span'))
-//elements.push(document.getElementsByTagName('strong'))
-elements.push(document.getElementsByTagName('rating'))
-elements.push(document.getElementsByClassName('upt__info__ratings'));
-elements.push(document.getElementsByClassName('text'));
-elements.push(document.getElementsByClassName('user-link'));
-elements.push(document.getElementsByClassName('user-link ulpt'));
 
 /*<div class="upt__info__ratings"><span title="Rapid rating over 244 games" data-icon="" 
 class="text">1442</span><span title="Classical rating over 17 games" data-icon="" 
@@ -25,11 +18,7 @@ title="UltraBullet rating over 0 games" data-icon="" class="text">&nbsp;&nbsp
 
 //<a class="user-link ulpt" href="/@/Ad_stefnum">Ad_stefnum</a>
 
-//class=text
 
-//https://www.w3schools.com/Jsref/met_document_queryselectorall.asp
-//className or querySelector use full xpath with query selector
-/*
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
 
@@ -38,7 +27,11 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var pattern = /(\d{4}|\d{4}\-\d{4})$/g 
+            
+            ///(\d{3}\?)$/g|/(\d{4}\?)$/g|/(\d{4})$/g|/(\d{3})$/g;
+            ///(\d{4}|\d{4}\-\d{4})$/g
+                var pattern = /(\d{4}\?|\d{3}|\d{3}\?|\d{4})$/g;
+            
             var replacedText = text.replaceAll(pattern, "");
 
             if (replacedText !== text) {
@@ -46,16 +39,4 @@ for (var i = 0; i < elements.length; i++) {
             }
         }
     }
-}*/
-
-(function iterate_node(node) {
-    if (node.nodeType === 3) { // Node.TEXT_NODE
-        var text = node.data.replace(/(\d{4}|\d{4}\-\d{4})$/g, "");
-        if (text != node.data) // there's a Safari bug
-            node.data = text;
-    } else if (node.nodeType === 1) { // Node.ELEMENT_NODE
-        for (var i = 0; i < node.childNodes.length; i++) {
-            iterate_node(node.childNodes[i]); // run recursive on DOM
-        }
-    }
-})(elements);
+}
