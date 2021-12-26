@@ -1,19 +1,31 @@
 # Rating Concealer
 
-An extension which checks for all ratings on Lichess.com and blocks it out so you can focus on playing great chess. Note it also works on years in the format yyyy so restrict it to sites you want alone e.g lichess and chess.com etc..
+An extension which checks for all ratings on Lichess.com and blocks it out so you can focus on playing great chess. 
 
-It removes all ratings not only yours.
+# Features
+- It removes all ratings not only yours.
+- It also removes dates(Fixing).
+- It is disabled on the homepage.
+- Enabled on all other pages.
+- Rating gain or loss is also removed but certain markers of success and failure have been left in to inform your growth e.g rating progession on profile page, whether you won or loss the game and by what means.
+- Custom messages or quotes are displayed on the top during your game.
 
-# Features to add
+
+# TODO
+- Don't allow it to remove parts key to the website
+    - Match times on the homepage. Maybe just disable it on the homepage
 - Let users type in preferred message to be displayed.
+    - Needs to be aesthetically put though.
 - Display quotes or blank based on user's choice if they don't enter custom message.
-- Enable for Analysis Board "Ad_stefnum (1432)"
+    - Display quotes or user message in a blockquote tag at the top of the page
 - Enable for player modal.
-- Enable for Provisional rating 1310?
-- Enable for puzzles
-- Add to Gamepage
+    - Maybe check one more node level deep in the replace function.
 
 # Installation
+## Chrome Web Store(To be published soon)
+- Just search for rating concealer
+
+## Developer mode
 - Clone this repo.
 - Go to ```browser_name://extensions``` .
 - Click on Developer Mode on the far right top corner.
@@ -21,4 +33,3 @@ It removes all ratings not only yours.
 - Navigate in your computer to the location where the cloned folder is saved and select the folder.
 - Make sure the Enable Slider is toggled on.
 - Refresh
-- Go to extensions bar on the browser and pin the extension and then go to lichess.org or chess.com and restrict the extension there by selecting ```This can read and change data on:```. Then choose lichess.org or chess.com or whatever website you're on.

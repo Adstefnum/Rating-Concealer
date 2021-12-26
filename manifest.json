@@ -14,12 +14,17 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*/*"
+                "https://*.lichess.org/*",
+                "https://*.chess.com/*"
             ],
             "js": [
                 "content.js"
+            ],
+            "exclude_matches":[
+                
             ],
             "run_at": "document_end"
         }
     ]
 }
+//https://developer.chrome.com/docs/extensions/mv3/content_scripts/
