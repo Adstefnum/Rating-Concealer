@@ -20,6 +20,8 @@ An extension which checks for all ratings on Lichess.com and blocks it out so yo
     - Display quotes or user message in a blockquote tag at the top of the page
 - Enable for player modal.
     - Maybe check one more node level deep in the replace function.
+- Find a way to disable it on after a game is finished as it brings back the ratings
+- Publish on Google chrome web store, firefox addons, and opera addons. But mainly chrome first.
 
 # Installation
 ## Chrome Web Store(To be published soon)

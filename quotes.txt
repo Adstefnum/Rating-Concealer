@@ -1,3 +1,4 @@
+ 01
  “When you see a good move, look for a better one”
 
 (Emanuel Lasker)
@@ -121,7 +122,6 @@ Others give only 2 percent
 large number of professional violinists”
 
 (Mikhail Botvinnik)
-
 18“Only the player with the initiative has the right to attack”
 
 (Wilhelm Steinitz)
